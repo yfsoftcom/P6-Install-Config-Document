@@ -1,0 +1,111 @@
+<html>
+  <title>Primaver P6 R15.1 TimeSheets 使用手册</title>
+  <style>
+    a, p{
+      color: #333;
+    }
+    p{ line-height: 1.1em; padding: 0.2em; margin: 0.2em;}
+    a, a:visited, a:hover{
+      color: #333;
+      text-decoration: none;
+    }
+    li{
+      margin: .5em;
+    }
+    img{
+      display: inline-block; width: 50%; margin: 1em auto;
+      margin-left: 2em;
+    }
+  </style>
+  <body>
+    <h2>Primaver P6 R15.1 TimeSheets 使用手册</h2>
+    <hr/>
+    <h3>目录</h3>
+    <ul>
+      <li><a href="#config">0.基本设置<a>
+        <ul>
+          <li><a href="#worker">工时填报人员<a></li>
+          <li><a href="#manager">工时审批经理<a></li>
+        </ul>
+      </li>
+      <li><a href="#add-periods">1.添加工时周期<a></li>
+      <li><a href="#assign-task">2.分配任务到资源上<a></li>
+      <li><a href="#feedback">3.登录Team Member填报工时<a></li>
+      <li><a href="#approval">4.资源经理进行审批<a></li>
+    </ul>
+
+    <h3>详细步骤</h3>
+    <ul>
+      <li id="config">
+        <h4>0.基本设置</h4>
+        <ul>
+          <li id="worker">
+            <h4>工时填报人员</h4>
+            <p>管理员 > 用户存取 > 新建用户</p>
+            <img alt="" src="./snaps/ts-cfg-1.png" class="snap"/>
+            <p>用户模块存取添加 工时单 和 团队成员</p>
+            <img alt="" src="./snaps/ts-cfg-2.png" class="snap"/>
+          </li>
+          <li id="manager">
+            <h4>工时审批经理</h4>
+            <p>全局安全配置，设置资源经理的存取权限</p>
+            <img alt="" src="./snaps/ts-cfg-3.png" class="snap"/>
+            <img alt="" src="./snaps/ts-cfg-4.png" class="snap"/>
+            <p>选择审批经理的用户为资源经理的配置</p>
+            <img alt="" src="./snaps/ts-cfg-5.png" class="snap"/>
+            <p>设置资源的审批流，在工时审批经理处，选择改用户</p>
+            <img alt="" src="./snaps/ts-cfg-6.png" class="snap"/>
+          </li>
+        </ul>
+      </li>
+      <li id="add-periods">
+        <h4>1.添加工时周期</h4>
+        <p>管理员 > 企业数据 > 工时单周期</p>
+        <img alt="" src="./snaps/ts-cfg-7.png" class="snap"/>
+        <p>新建周期并保存</p>
+        <img alt="" src="./snaps/ts-cfg-8.png" class="snap"/>
+      </li>
+
+      <li id="assign-task">
+        <h4>2.分配任务到资源上</h4>
+        <p>选择任务 > 分配 > 选择资源</p>
+        <img alt="" src="./snaps/ts-cfg-9.png" class="snap"/>
+        <p>分配需要的资源</p>
+        <img alt="" src="./snaps/ts-cfg-10.png" class="snap"/>
+        <p>根据需要调整时间和周期</p>
+        <img alt="" src="./snaps/ts-cfg-11.png" class="snap"/>
+      </li>
+
+      <li id="feedback">
+        <h4>3.登录Team Member填报工时</h4>
+        <p>打开Team Member : http://[server-ip]:8207/p6tmweb</p>
+        <img alt="" src="./snaps/ts-tm-0.png" class="snap"/>
+        <p>选择周期</p>
+        <img alt="" src="./snaps/ts-tm-1.png" class="snap"/>
+        <p>选择自动打开工时单</p>
+        <img alt="" src="./snaps/ts-tm-2.png" class="snap"/>
+        <p>找到任务</p>
+        <img alt="" src="./snaps/ts-tm-4.png" class="snap"/>
+        <p>填报工时</p>
+        <img alt="" src="./snaps/ts-tm-5.png" class="snap"/>
+        <p>提交即可</p>
+      </li>
+
+      <li id="approval">
+        <h4>4.资源经理进行审批</h4>
+        <p>打开仪表板 >  批准工时单</p>
+        <img alt="" src="./snaps/ts-cfg-12.png" class="snap"/>
+        <p>选择 资源经理 身份</p>
+        <img alt="" src="./snaps/ts-cfg-13.png" class="snap"/>
+        <p>选择 工时 周期</p>
+        <img alt="" src="./snaps/ts-cfg-14.png" class="snap"/>
+        <p>通过／驳回该工时单</p>
+        <img alt="" src="./snaps/ts-cfg-15.png" class="snap"/>
+        <p>登录Team Member 查看状态</p>
+        <img alt="" src="./snaps/ts-tm-7.png" class="snap"/>
+      </li>
+
+    </ul>
+
+  </body>
+<html>
